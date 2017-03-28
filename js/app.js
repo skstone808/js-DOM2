@@ -7,6 +7,8 @@ Also don't forget to run your live-server for this assignment.*/
 
 Rating: 5 Stars*/
 
+var kapRating = document.getElementById("rating1");
+kapRating.innerHTML = "Rating: 5 Starz";
 
 //2. Sunrise Restaurant
 /*No rise and shine for the Sunrise Restaurant, as their price and address needs some serious updating. Bring in some sunshine by changing the price and address to the following:
@@ -14,6 +16,10 @@ Rating: 5 Stars*/
 Price: $$$
 Adress: 525 Kapahulu Ave, Honolulu, HI 96815*/
 
+var sunPrice = document.getElementById("price2");
+sunPrice.innerHTML = "Price: $$$";
+var sunAddy = document.getElementById("addy2");
+sunAddy.innerHTML= "Address: 525 Kapahulu Ave, Honolulu, HI 96815";
 
 //3. Ramen Nakamura
 /*Literally, where did the time go? Ramen Nakamura is missing the hours section! This mistake is timeless.
@@ -24,6 +30,11 @@ Hours: 6pm - 12am Sun - Sat
 
 Append this div element to the div id "text3"*/
 
+var ramenHours = document.createElement("div");
+ramenHours.id = "hours3";
+ramenHours.innerHTML = "Hours: 6pm - 12am Sun - Sat";
+text3.appendChild(ramenHours);
+
 
 //4. Kam Bowl
 /*Kam Bowl got no spare time to update their info and business is suffering! Help them regain their kingpin status again.
@@ -33,7 +44,12 @@ Create a new div element with an id of "price4". Inside this div element, give i
 Price: $$$
 
 Append this element to the div with the id of 
-"text4"*/
+"text4"*/ 
+
+var kamPrice = document.createElement("div");
+kamPrice.id = "price4";
+kamPrice.innerHTML = "Price: $$$";
+text4.appendChild(kamPrice);
 
 /*Create a new div element with an id of "addy4". Inside this div element, give it the following info:
 
@@ -41,6 +57,11 @@ Address: 1620 N. School St, Honolulu, HI 96817
 
 Append this element to the div with the id of 
 "text4"*/
+
+var kamAddy = document.createElement("div");
+kamAddy.id = "addy4";
+kamAddy.innerHTML = "Address: 1620 N. School St, Honolulu, HI 96817";
+text4.appendChild(kamAddy);
 
 /*Create a new div element with an id of "hours4". Inside this div element, give it the following info:
 
@@ -50,12 +71,21 @@ Append this element to the div with the id of
 "text4"
 */
 
+var kamHours = document.createElement("div");
+kamHours.id = "hours4";
+kamHours.innerHTML = "Hours: 9am - 10pm Sun - Sat";
+text4.appendChild(kamHours);
+
 /*Create a paragraph element with an id of "update4". Inside this paragraph element, give it the following info:
 
 I'd leave a blank space for this oxtail soup!
 
 Append this element to the div id of "comment4"*/
 
+var kamUpdate = document.createElement("div");
+kamUpdate.id = "update4";
+kamUpdate.innerHTML = "I'd leave a blank space for this oxtail soup!";
+comment4.appendChild(kamUpdate);
 
 //5. The Death Star Cafe
 /*The empire strikes back with a new and improved oxtail soup offering. Help the dark side win back customers by executing the following commands:*/
@@ -79,3 +109,27 @@ hours5: Hours: We never close.
 Append the div elements to the div id "text5"
 */
 
+var newName = document.createElement("div");
+newName.id = "name5";
+newName.innerHTML = "The Death Star Cafe";
+text5.appendChild(newName);
+
+var newRating = document.createElement("div");
+newRating.id = "rating5";
+newRating.innerHTML = "Rating: 2 Stars";
+text5.appendChild(newRating);
+
+var newPrice = document.createElement("div");
+newPrice.id = "price5";
+newPrice.innerHTML = "Price: $$";
+text5.appendChild(newPrice);
+
+var newAddy = document.createElement("div");
+newAddy.id = "addy5";
+newAddy.innerHTML = "A galaxy far, far away."
+text5.appendChild(newAddy);
+
+var newHours = document.createElement("div");
+newHours.id = "hours5";
+newHours.innerHTML = "We never close.";
+text5.appendChild(newHours);
